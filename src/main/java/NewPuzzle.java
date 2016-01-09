@@ -1,6 +1,6 @@
 public class NewPuzzle {
 
-  public String puzzleConverter(String input) {
+  public static String puzzleConverter(String input) {
 
       String word = input.toLowerCase();
 
