@@ -5,11 +5,18 @@ public class NewPuzzleTest{
 
   @Test
   public void converter_returnLowerCaseForBOOT_boot(){
-    Converter converter = new Converter("");
+    NewPuzzle newPuzzle = new NewPuzzle();
 
 
-    assertEquals("boot", converter.puzzleConverter("BOOT"));
+    assertEquals("boot", newPuzzle.puzzleConverter("BOOT"));
    }
+
+  @Test
+  public void converter_returnDashForA_Dash(){
+  	NewPuzzle newPuzzle = new NewPuzzle();
+
+  	assertEquals("-", newPuzzle.puzzleConverter("A"));
+  }
  }
 
 
