@@ -12,7 +12,7 @@ public String puzzleConverter (String inputString) {
      String  puzzleOut = inputString.toUpperCase();
 
      puzzleOut = puzzleOut.replace("A", "-");
-
+     puzzleOut = puzzleOut.replace("E", "-");
       return puzzleOut;
 
     }
