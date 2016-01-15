@@ -3,10 +3,9 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import static spark.Spark.*;
 
-public class Main{
+public class App {
   public static void main(String[] args){
   }
-}
   //  String layout = "templates/layout.vtl";
 
   //get("/form", (request,response) -> {
@@ -24,5 +23,21 @@ public class Main{
 
     //return new ModelAndView(model, layout);
   //}, new VelocityTemplateEngine());
-//}
-//}
+
+public static String puzzleConverter (String input) {
+     String  wordPuzzle = input.replace("a", "-");
+    
+     
+      return wordPuzzle;
+
+    }
+  }
+
+
+
+
+
+
+
+
+
