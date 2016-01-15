@@ -1,0 +1,8 @@
+If letter is a, e, i, o, u, l, n, r, s, t, upper or lower case then return 1.
+If letter is d, g, upper or lower case then return 2.
+If letter is b, c, m, p, upper or lower case then return 3.
+If letter is f, h, v, w, y, upper or lower case then return 4.
+If letter is k, upper or lower case then return 5.
+If letter is j, x, upper or lower case then return 8.
+If letter q, z, upper or lower case then return 10.
+If word is edchkxq upper or lower case then 33.
