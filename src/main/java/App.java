@@ -13,6 +13,10 @@ public String puzzleConverter (String inputString) {
 
      puzzleOut = puzzleOut.replace("A", "-");
      puzzleOut = puzzleOut.replace("E", "-");
+     puzzleOut = puzzleOut.replace("I", "-");
+     puzzleOut = puzzleOut.replace("O", "-");
+     puzzleOut = puzzleOut.replace("U", "-");
+
       return puzzleOut;
 
     }

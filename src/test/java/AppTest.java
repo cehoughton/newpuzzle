@@ -22,26 +22,21 @@ public class AppTest {
     	assertEquals("B-T-", app.puzzleConverter("BATE"));
     	}
 
-  //  @Test
-  //    public void puzzle_returnDashForAEI_B__T_() {
-  //      App app = new App();
-  //      assertEquals("B--T-", app.puzzleConverter("BAITE"));
-  //      }
-  //
-  //   @Test
-  //     public void puzzle_returnDashForAEIO_B___T_() {
-  //      App app = new App();
-  //      assertEquals("B---T-", app.puzzleConverter("BOAITE"));
-  //      }
-  //
-  //    @Test
-  //     public void puzzle_returnDashForAEIOU_B___T__() {
-  //       App app = new App();
-  //       assertEquals("B---T--", app.puzzleConverter("BOAITUE"));
-  //       }
+    @Test
+      public void puzzle_returnDashForAEI_B__T_() {
+        App app = new App();
+        assertEquals("B--T-", app.puzzleConverter("BAITE"));
+        }
 
+     @Test
+       public void puzzle_returnDashForAEIO_B___T_() {
+        App app = new App();
+        assertEquals("B---T-", app.puzzleConverter("BOAITE"));
+        }
 
-
-
-
+      @Test
+       public void puzzle_returnDashForAEIOU_B___T__() {
+         App app = new App();
+         assertEquals("B---T--", app.puzzleConverter("BOAITUE"));
+        }
  }
