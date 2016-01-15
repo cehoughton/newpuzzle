@@ -1,3 +1,4 @@
+import java.util.Map;
 import java.util.HashMap;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
@@ -5,9 +6,26 @@ import static spark.Spark.*;
 
 public class App {
   public static void main(String[] args){
-  }
+    staticFileLocation("/public");
+    String layout = "templates/layout.vtl";
 
-public String puzzleConverter (String inputString) {
+   get("/", (request, response) -> {
+     Map<String, Object> model = new HashMap<String, Object>();
+     model.put("template", "templates/index.vtl");
+
+     return new ModelAndView(model, layout);
+  }, new VelocityTemplateEngine());
+
+//  get("/output", (request, response) -> {
+      // HashMap model = new HashMap();
+    //   String puzzleOut = request.queryParams();
+//  }, new VelocityTemplateEngine());
+}
+
+
+
+
+public static String puzzleConverter (String inputString) {
 
      String  puzzleOut = inputString.toUpperCase();
 
