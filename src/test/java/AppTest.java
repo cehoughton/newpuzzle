@@ -10,6 +10,11 @@ public class AppTest {
     assertEquals("BT", app.puzzleConverter("bt"));
    }
 
+   @Test
+ 		public void puzzle_returnDashForA_B_Dash_T() {
+ 		  App app = new App();
+ 		  assertEquals("B-T", app.puzzleConverter("BAT"));
+ 		  }
 
 
 
