@@ -20,15 +20,24 @@ public class AppAssertionTest extends FluentTest {
    @Test
    public void rootTest() {
      goTo("http://localhost:4567");
-   assertThat(pageSource()).contains("newpuzzle");
-
-
-
-  //  @Test public void puzleCreatedTest() {
-  //    goTo("http://localhost:4567/");
-  //    fill("#tag").with("inputString");
-  //    submit(".btn");
-  //   assertThat(pageSource()).contains("inputString");
-     //This tests if a tagged fill is outputing correctly with the user input in the right place.
+     assertThat(pageSource()).contains("newpuzzle");
    }
+
+
+
+   @Test
+   public void puzzleCreatedTest() {
+     goTo("http://localhost:4567/");
+     fill("#word").with("wowo");
+     submit(".btn");
+     assertThat(pageSource()).contains("W-W-");
    }
+
+   @Test
+   public void puzzleLeavesConsonantsTest() {
+     goTo("http://localhost:4567/");
+     fill("#word").with("trfh tgg");
+     submit(".btn");
+     assertThat(pageSource()).contains("TRFH TGG");
+   }
+ }

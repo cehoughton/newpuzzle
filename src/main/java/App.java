@@ -29,10 +29,7 @@ public class App {
  }, new VelocityTemplateEngine());
 
 
-//  get("/output", (request, response) -> {
-      // HashMap model = new HashMap();
-    //   String puzzleOut = request.queryParams();
-//  }, new VelocityTemplateEngine());
+
 }
 
 
